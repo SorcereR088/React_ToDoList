@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+  font-family: "DM Sans", system-ui;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: start;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Ensures the body takes the full height of the viewport */
+    background-color: rgb(222, 222, 222); /* Matches the background color */
+}
+
+.container {
+    padding: 20px;
+    background-color: white;
+    display: flex; /* Makes the container itself a flex container */
+    flex-direction: column; /* Arranges the contents vertically */
+    align-items: center; /* Centers contents horizontally within the container */
+    border-radius: 10px; /* Optional: adds rounded corners to the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+.input-section{
+    display: flex;
+    gap: 18px;
+}
+
+.contents{
+    max-width: fit-content;
+    max-width: 100%;
+    padding: 1em;
+}
+
+.input-section input{
+    width: 300px;
+    padding: 0.8em 1.4em 0.8em 1.4em;
+    border-radius: 10px;
+}
+
+.input-section button{
+    background-color: rgb(0, 144, 41);
+    padding: 0.9em 1.4em;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.cards{
+    background-color: rgb(199, 199, 199);
+    padding: 30px;
+    display: contents;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.delete-button{
+    background-color: rgb(218, 0, 0);
+    padding: 0.6em 1em;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.cards button{
+    margin: 0.8em;
+}
+
+.cards ol{
+    margin: 0%;
+    padding: 0%;
+}
+.cards ol li {
+    margin: 0.8em;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(38, 143, 255, 0.1);
+}
+
+span {
+    flex-grow: 1; /* Allows the span to take up the full width */
+    padding-right: 10px; /* Adds some padding to the right of the text */
+    background-color: rgb(228, 228, 228);
+    max-width: calc(100% - 100px); /* Adjusts the maximum width for the span */
+}
+
+.move-button{
+    margin-left: 5px;
+    padding:  0.4em 0.6em;
+    border-radius: 50%;
+}
+
+.cards button {
+    margin: 0.8em;
+    flex-shrink: 0; /* Prevents the buttons from shrinking */
+}
+
+
+
+
