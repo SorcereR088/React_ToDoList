@@ -10,7 +10,8 @@ function Todolist(){
     }
 
     function addTask(){
-        tasks
+        const newtask = document.getElementById("input").value;
+        setTasks(t => [...t, newtask]);
     }
 
     function handleDelete(index){
@@ -21,7 +22,8 @@ function Todolist(){
     return(
         <div>
             <h1>To Do List</h1>
-            <input type="text"  placeholder="Enter your task" value={newTask} onChange={handleNewTask}/>
+            <input type="text" id="input" placeholder="Enter your task"
+            value={newTask} onChange={handleNewTask}/>
             <button onClick={addTask}>Add</button>
 
             <ol>
