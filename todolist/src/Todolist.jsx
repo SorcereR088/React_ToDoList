@@ -22,7 +22,7 @@ function Todolist(){
         <div>
             <h1>To Do List</h1>
             <input type="text"  placeholder="Enter your task" value={newTask} onChange={handleNewTask}/>
-            <button onClick={addTask}>Submit</button>
+            <button onClick={addTask}>Add</button>
 
             <ol>
                 {tasks.map((task, index) => <li key={index}>
